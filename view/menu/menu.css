@@ -1,0 +1,203 @@
+body {
+    margin: 0px 200px 0px 200px;
+    color: #474554;
+}
+
+.nav {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.nav .titulo {
+    font: 400 50px Sansation, sans-serif;
+} 
+
+.nav .buscar {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+
+    width: 500px;
+    height: 44px;
+
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.25);
+
+    background-color: #fff;
+    border-radius: 20px;
+    border-width: 0px;
+
+    padding: 0px 24px 0px 8px;
+}
+
+.nav .buscar .buscarIcone{
+    padding-right: 13px;
+    color: #8C8C8C;
+}
+
+.nav .buscar input {
+    border: 0;
+    width: 100%;
+    font-size: 16px;
+}
+
+.nav .nav-direita {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+.nav .nav-direita .perfil {
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-direita span {
+    font-size: 32px;
+}
+
+.nav-direita span:first-child {
+    margin-right: 8px;
+}
+
+.nav-direita p {
+    font-size: 14px;
+}
+
+a {
+    color: #474554;
+    transition: ease-in-out, .2s ease-in-out;
+    border-radius: 5px;
+}
+
+a:hover{
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.25);
+
+}
+
+.lista {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(560px, 560px));
+    grid-row-gap: 40px;
+    grid-column-gap: 75px;
+    justify-content: center;
+    text-align: center;
+    padding: 70px 0px 70px 0px;
+}
+
+/* AQUI COMEÇA A LISTA */
+
+.elemento {
+    background: #FFFFFF;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: row;
+    min-height: 250px;
+}
+
+.left-content {
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center
+}
+
+.left-content .imgCarro {
+    /* padding-left: 13px; */
+    /* max-height: 148px; */
+
+    max-width: 148px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.left-content .retire {
+    background-color: #4D54FF;
+    color: #fff;
+    font-size: 16px;
+    padding: 4px 0px 4px 0px;
+}
+
+
+.left-content .alugarTexto {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: #FFFFFF;
+    background-color: #42BE42;
+    padding: 23px 33px 23px 33px;
+    border-radius: 0px 0px 0px 8px;
+    padding: 23px 33px 23px 33px;
+    
+    transition: ease-in-out, .2s ease-in-out;
+}
+
+.left-content .alugarTexto:hover {
+    
+    background-color: #007400;
+}
+
+.left-content .top-left-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.elemento .right-content {
+    margin: auto;
+    color: #474554;
+}
+
+.elemento .right-content .top-content .nomeVeiculo p{
+    font-weight: 600;
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+.elemento .nomeVeiculo {
+    text-align: left;
+}
+
+/* .elemento .right-content .left-info,  */
+.elemento .right-content .info,
+.elemento .right-content .tipoCambio,
+.elemento .right-content .qtdPortas,
+.elemento .right-content .cor,
+.elemento .right-content .tipoCombustivel
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.elemento .right-content .top-content {
+    padding-bottom: 55px;
+}
+.elemento .right-content .left-info {
+    padding-right: 35px;
+}
+
+.elemento .right-content .info img {
+    padding-right: 8px;
+}
+
+.elemento .right-content .bottom-content {
+    font-weight: bold;
+    font-size: 36px;
+    /* padding-bottom: 20px; */
+}
+
+.elemento .right-content .tipoCambio, .elemento .right-content .cor {
+    padding-bottom: 20px;
+}
