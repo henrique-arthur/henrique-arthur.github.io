@@ -1,0 +1,55 @@
+@media (max-height: 950px) {
+  .esquerda {
+    height: auto;
+  }
+}
+
+@media (max-width: 1224px) {
+  .direita {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .esquerda {
+    width: auto;
+    padding: 50px 100px;
+  }
+
+  .direita .content .linha {
+    height: 50px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .esquerda {
+    width: auto;
+    padding: 50px 50px;
+  }
+
+  .direita {
+    padding: 50px 50px;
+  }
+}
+
+@media (max-width: 375px) {
+  .linha{
+    display: none;
+  }
+
+  .esquerda .nome {
+    font-size: 27px;
+    font-weight: 600;
+  }
+
+  .esquerda .bio .bio-texto {
+    padding-left: 0px;
+    text-align: justify;
+  }
+}
