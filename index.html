@@ -6,10 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="responsive.css">
+  <link rel="shortcut icon" href="./assets/icones/site.svg"/>
+  <script src="action.js"></script>
   <title>Arthur Henrique - Currículo</title>
 </head>
 <body>
-  <div class="container">
+  <div class="popup" id="md">
+    <img class="arthur-iphone" src="assets/icones/arthur.webp" alt="Arthur Henrique">
+    <div class="titulo">Seja Bem-Vindo</div>
+    <div class="texto">Este é o meu currículo, fique a vontade para dar uma olhadinha! 👀</div>
+    <button class="botao" onclick="closeModal()">Continuar</button>
+  </div>
+  <div class="container" id="ct">
     <div class="esquerda">
       <img class="foto-perfil" src="assets/profile-picture.png" alt="Arthur Henrique" width="300" height="300">
       <div class="nome">Arthur Henrique</div>
@@ -107,6 +115,12 @@
 
             <div class="cargo-experiencia">Fundação Bradesco</div>
             <div class="empresa-experiencia">Linguagem de modelagem Unificada (UML)</div>
+
+            <div class="cargo-experiencia">Instituto Federal de Minas Gerais</div>
+            <div class="empresa-experiencia">Introdução à Linguagem de Programação Python</div>
+
+            <div class="cargo-experiencia">Curso em Vídeo</div>
+            <div class="empresa-experiencia">MySQL</div>
           </div>
         </div>
   
@@ -121,6 +135,7 @@
           </div>
       </div>        
       </div>
+    </div>
   </div>
 </body>
 </html>

@@ -52,6 +52,7 @@ ul {
 .container {
   display: flex;
   flex-direction: row;
+  opacity: 4%;
 }
 .esquerda {
   display: flex;
@@ -161,7 +162,7 @@ ul {
   padding: 50px 100px;
   display: flex;
   width: 100%;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: space-around;
 }
 
@@ -212,4 +213,64 @@ ul {
   font-size: 16px;
   font-weight: 400;
   padding-bottom: 13px;
+}
+
+.popup {
+  z-index: 999;
+  position: fixed;
+  top: 50%;  
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 50px 40px;
+
+  text-align: center;
+
+  color: #212121;
+  background-color: #fff;
+  border-radius: 15px;
+
+  overflow: hidden;
+
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 20%);
+}
+
+.popup .titulo {
+  font-size: 34px;
+  font-weight: 600;
+  padding-bottom: 8px;
+}
+
+.popup .texto {
+  color: #353535;
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 32px;
+}
+
+.popup .titulo-cointainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.popup .arthur-iphone {
+  width: 120px
+}
+
+.popup .botao {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 18px 80px;
+
+  color: #f0f0f5;
+  background-color: #008bc0;
+
+  border-radius: 4px;
+  border: 0px;
+  transition: ease-in-out, .35s ease-in-out;
+
+}
+
+.popup .botao:hover {
+  background-color: #0055c0;
 }
