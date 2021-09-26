@@ -16,7 +16,7 @@ body{
     color: #212121;
     background: #F0F0F5;
     -webkit-font-smoothing: antialiased;
-    overflow-x: hidden;
+    overflow: hidden;
     /* font-size: 1.6rem; */
 }
 
