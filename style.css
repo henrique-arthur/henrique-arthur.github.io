@@ -1,26 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-*{
-   margin: 0;
-   padding: 0;
-   outline: 0;
-   box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
 }
 
 /* html {
    font-size: 62.5%;
 } */
 
-body{
-    font: 14px Poppins, sans-serif;
-    color: #212121;
-    background: #F0F0F5;
-    -webkit-font-smoothing: antialiased;
-    overflow: hidden;
-    /* font-size: 1.6rem; */
+body {
+  font: 14px Poppins, sans-serif;
+  color: #212121;
+  background: #f0f0f5;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+  /* font-size: 1.6rem; */
 }
 
-input, button, textarea {
+input,
+button,
+textarea {
   font: 400 18px Roboto, sans-serif;
 }
 
@@ -29,7 +31,7 @@ button {
 }
 
 a:link {
-   text-decoration: none;
+  text-decoration: none;
 }
 
 /* a:hover {
@@ -38,7 +40,7 @@ a:link {
 }  */
 
 ul {
-   list-style-type: none;
+  list-style-type: none;
 }
 
 /* ::-webkit-input-placeholder {
@@ -60,20 +62,34 @@ ul {
   justify-content: flex-start;
   align-items: center;
 
+  position: fixed;
+  width: 25%;
+  height: 100%;
+
   padding: 50px 50px;
 
-  background: rgb(0,139,192);
-  background: linear-gradient(0deg, rgba(0,139,192,1) 0%, rgba(0,85,192,1) 100%);
-  /* background-color: #0055c0; */
+  background: rgb(0, 139, 192);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 139, 192, 1) 0%,
+    rgba(0, 85, 192, 1) 100%
+  );
   color: #f0f0f5;
-  width: 450px;
-  height: auto;
+}
+
+.esquerda-corpo {
+  overflow: auto;
 }
 
 .esquerda .foto-perfil {
-  height: 250px;
-  width: 250px;
-  margin-bottom:20px;
+  height: 100%;
+  width: 100%;
+  max-width: 250px;
+  max-height: 250px;
+  border-radius: 100%;
+  aspect-ratio: 3/3;
+  object-fit: cover;
+  margin-bottom: 20px;
 }
 
 .esquerda .nome {
@@ -81,11 +97,9 @@ ul {
   font-weight: 600;
 }
 
-
 .esquerda .bio {
   padding-top: 20px;
   font-size: 16px;
-  
 }
 
 .esquerda .bio-tituloIcone {
@@ -105,16 +119,13 @@ ul {
 }
 
 .esquerda .bio .bio-texto {
-  padding-left: 38px;
   text-align: justify;
 }
-
 
 .esquerda .contato {
   padding-top: 40px;
   font-size: 16px;
   width: 100%;
-
 }
 
 .esquerda .contato-tituloIcone {
@@ -138,11 +149,11 @@ ul {
   justify-content: space-between;
 }
 
-.contato-btn{
+.contato-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   border: 0px solid;
   border-radius: 4px;
   margin-bottom: 20px;
@@ -150,8 +161,7 @@ ul {
   width: 70px;
   height: 70px;
   background-color: #f0f0f5;
-  transition: ease-in-out, .35s ease-in-out;
-
+  transition: ease-in-out, 0.35s ease-in-out;
 }
 
 .contato-btn:hover {
@@ -159,9 +169,10 @@ ul {
 }
 
 .direita {
-  padding: 50px 100px;
+  padding: 48px 0;
   display: flex;
-  width: 100%;
+  width: 70%;
+  margin-left: 30%;
   flex-direction: row-reverse;
   justify-content: space-around;
 }
@@ -198,13 +209,13 @@ ul {
   margin-right: 20px;
 }
 
-.direita .content .titulo{
+.direita .content .titulo {
   font-size: 32px;
   font-weight: 700;
   padding-bottom: 10px;
 }
 
-.direita .content .cargo-experiencia{
+.direita .content .cargo-experiencia {
   font-size: 18px;
   font-weight: 600;
 }
@@ -218,7 +229,7 @@ ul {
 .popup {
   z-index: 999;
   position: fixed;
-  top: 50%;  
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -254,7 +265,7 @@ ul {
 }
 
 .popup .arthur-iphone {
-  width: 120px
+  width: 120px;
 }
 
 .popup .botao {
@@ -267,8 +278,7 @@ ul {
 
   border-radius: 4px;
   border: 0px;
-  transition: ease-in-out, .35s ease-in-out;
-
+  transition: ease-in-out, 0.35s ease-in-out;
 }
 
 .popup .botao:hover {

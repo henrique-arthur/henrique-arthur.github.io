@@ -1,12 +1,10 @@
-@media (max-height: 950px) {
-  .esquerda {
-    height: auto;
-  }
-}
-
 @media (max-width: 1224px) {
   .direita {
     flex-direction: column;
+    margin-left: 35%;
+  }
+  .esquerda {
+    width: 30%;
   }
 }
 
@@ -18,6 +16,12 @@
   .esquerda {
     width: auto;
     padding: 50px 100px;
+    position: unset;
+  }
+
+  .direita {
+    margin-left: unset;
+    width: 100%;
   }
 
   .direita .content .linha {
@@ -33,18 +37,16 @@
     font-weight: 600;
     padding-bottom: 8px;
   }
-  
+
   .popup .texto {
     color: #353535;
     font-size: 16px;
     font-weight: 500;
     padding-bottom: 32px;
   }
-
 }
 
 @media (max-width: 600px) {
-
   .esquerda {
     width: auto;
     padding: 50px 50px;
@@ -56,7 +58,7 @@
 }
 
 @media (max-width: 375px) {
-  .linha{
+  .linha {
     display: none;
   }
 
